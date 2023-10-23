@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Hello</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+
+<style>
+    .bgBlue {
+        background-color: rgb(49, 95, 155);
+    }
+
+    .className {
+        background-color: rgb(222, 135, 4);
+    }
+</style>
+<body>
+        <div id="app">
+            <header>
+            </header>
+            <main>
+                <section>
+                    <div>
+                        <h1 :class="[inputuValue]">{{ message }}</h1>
+                        <div>
+                            <input type="text" v-model="inputValue" />
+                            <div :class="className"> Vue è...  {{ inputValue }}</div>
+                            <div :class="numeri">da 1 a 10 mi piace...</div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+            </footer>
+        </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
