@@ -34,8 +34,8 @@
                         <div>
                             <input type="text" v-model="inputValue" />
                             <div :class="className"> Sono un Framework...  {{ inputValue }}</div>
-                            <div :class="numeri">da 1 a 10 mi piace...</div>
-                            <img v-bind:src="imgPath" />
+                            <div :class="numeri">da 1 a 10 mi piace... {{ num }} </div>
+                            <img :src="imgPath" />
                         </div>
                     </div>
                 </section>

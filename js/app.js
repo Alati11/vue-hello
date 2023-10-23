@@ -1,7 +1,7 @@
 console.log(Vue);
 
 const createApp = Vue.createApp
-const num = 11
+const num = 10
 
 const param = {
     data: function () {
@@ -12,8 +12,9 @@ const param = {
 			className: 'bgOrange',
 			inputValue: '..."Magico"...',
 			numeri: [0, 5, 6, 9, 8, 4, 5, 8],
-            imgPath:'/Users/giuseppealati/Dev/vue-hello/img/vue.jpeg',
+            imgPath:'./img/vue.jpeg',
 		}
+        
 	},
     methods: {
 		getRandomInt(min, max) {
