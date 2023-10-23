@@ -8,12 +8,19 @@
 </head>
 
 <style>
-    .bgBlue {
-        background-color: rgb(49, 95, 155);
+    #app{
+        margin:0 auto;
+        text-align: center;
+        padding: 30px;
+        align-items: 30px;
     }
 
-    .className {
-        background-color: rgb(222, 135, 4);
+    .bgBlue {
+        background-color: #394A5E;
+    }
+
+    .bgOrange {
+        background-color: #68B281;
     }
 </style>
 <body>
@@ -23,11 +30,12 @@
             <main>
                 <section>
                     <div>
-                        <h1 :class="[inputuValue]">{{ message }}</h1>
+                        <h1 :class="[inputValue]">{{ message }}</h1>
                         <div>
                             <input type="text" v-model="inputValue" />
-                            <div :class="className"> Vue è...  {{ inputValue }}</div>
+                            <div :class="className"> Sono un Framework...  {{ inputValue }}</div>
                             <div :class="numeri">da 1 a 10 mi piace...</div>
+                            <img v-bind:src="imgPath" />
                         </div>
                     </div>
                 </section>
